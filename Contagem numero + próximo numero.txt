@@ -1,0 +1,41 @@
+//solicite dois números. faça e apresente as soma de todos os
+//numeros inteiros entre os os dois números.
+// (Ex: 5 + 4 + 3 + 2 + 1 + 0).
+
+//entrada:
+
+const numero1 = Number(prompt("Escreva um numero qualquer: "))
+const numero2 = Number(prompt("escreva outro numero qualquer: "))
+
+//Resultado esperado: 14
+var n1 = numero1
+var n2 = numero2
+var soma = 0
+
+
+//Calculo:
+if (n1 <= n2) {
+  while (n1 <= n2) {
+
+    soma = soma + n1
+    console.log(`${n1} , ${soma}`)
+    n1++ // mesma coisa que numero1 = numero1 + 1
+  }
+  } else {
+    while (n2 <= n1) {
+
+      soma = soma + n2
+      console.log(`${n2} , ${soma}`)
+      n2++ // mesma coisa que numero1 = numero1 + 1
+
+
+    }
+  }
+
+
+
+//Saida:
+console.log(`A soma de todos os inteiros entre ${numero1} e ${numero2} é: ${soma}`)
+
+
+
